@@ -1,0 +1,48 @@
+html{
+    background: rgba(0, 0, 0, .8);
+    width: 100vw;
+    height: 100vh;
+}
+.bottom{
+    width: 100vw;
+    height: 100vh;
+    display: table;
+    text-align: center;
+}
+.bottom ul.page{
+    display: table-cell;
+    vertical-align: middle;
+}
+.bottom ul.page li{
+    display: inline-block;
+    width: 30%;
+}
+.bottom ul.page li img{
+    padding: 2px;
+}
+
+.mask{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 99;
+}
+.mask .page{
+    width: 100%;
+    /*-webkit-box-orient: horizontal;
+    display: -webkit-box;*/
+    display: table;
+}
+.mask .page li{
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+.mask .page li img{
+    width: 100%;
+}
